@@ -9,3 +9,8 @@ export { extractExecDirective } from "./reply/exec.js";
 export { extractQueueDirective } from "./reply/queue.js";
 export { extractReplyToTag } from "./reply/reply-tags.js";
 export type { GetReplyOptions, ReplyPayload } from "./types.js";
+export { deliverReply } from "./reply/deliver-reply.js";
+export { enqueueFollowupRun, getFollowupQueueDepth } from "./reply/queue.js";
+
+
+

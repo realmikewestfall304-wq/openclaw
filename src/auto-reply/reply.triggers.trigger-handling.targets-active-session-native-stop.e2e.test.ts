@@ -74,11 +74,11 @@ async function withTempHome<T>(fn: (home: string) => Promise<T>): Promise<T> {
   );
 }
 
-function makeCfg(home: string) {
+function makeCfg(home: string): any {
   return {
     agents: {
       defaults: {
-        model: "anthropic/claude-opus-4-5",
+        model: { primary: "anthropic/claude-opus-4-5" },
         workspace: join(home, "openclaw"),
       },
     },
@@ -248,10 +248,10 @@ describe("trigger handling", () => {
       const cfg = {
         agents: {
           defaults: {
-            model: "anthropic/claude-opus-4-5",
+            model: { primary: "anthropic/claude-opus-4-5" },
             workspace: join(home, "openclaw"),
           },
-          list: [{ id: "coding", model: "minimax/MiniMax-M2.1" }],
+          list: [{ id: "coding", model: { primary: "minimax/MiniMax-M2.1" } }],
         },
         channels: {
           telegram: {

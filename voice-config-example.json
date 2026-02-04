@@ -1,0 +1,19 @@
+{
+  "talk": {
+    "enabled": true,
+    "provider": "elevenlabs",
+    "apiKey": "YOUR_ELEVENLABS_API_KEY",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM",
+    "model": "eleven_monolingual_v1"
+  },
+  "agents": {
+    "defaults": {
+      "model": { "primary": "anthropic/claude-opus-4-5" }
+    }
+  },
+  "channels": {
+    "whatsapp": {
+      "allowFrom": ["*"]
+    }
+  }
+}

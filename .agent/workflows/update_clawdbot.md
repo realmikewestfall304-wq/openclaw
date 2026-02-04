@@ -2,6 +2,7 @@
 description: Update Clawdbot from upstream when branch has diverged (ahead/behind)
 ---
 
+
 # Clawdbot Upstream Sync Workflow
 
 Use this workflow when your fork has diverged from upstream (e.g., "18 commits ahead, 29 commits behind").
@@ -378,3 +379,25 @@ pnpm clawdbot agent --message "Verification: Upstream sync and macOS rebuild com
 
 echo "==> Done! Check Telegram for verification message, then run 'git push --force-with-lease' when ready."
 ```
+
+check gmail delete all read emails
+
+```bash
+labtop to profprm at elite level so that togther we can make software andn programs fast, easy and efficeiently
+1m
+@workspace /explain Property expected
+
+whatsapp
+mwest304@outlook.com
+gunna
+delete all read emails
+setup chat
+
+hey i want to build a project management board to keep track of your tasks
+
+gunnabot304@outlook.com)git clone <openclaw-repo-url>
+cd openclaw
+make install
+pnpm build
+```
+C:\Users\mwest\OneDrive\Documents\GitHub\openclaw\.agent\workflows\update_clawdbot.md
