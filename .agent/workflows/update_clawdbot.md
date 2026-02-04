@@ -401,3 +401,25 @@ make install
 pnpm build
 ```
 C:\Users\mwest\OneDrive\Documents\GitHub\openclaw\.agent\workflows\update_clawdbot.md
+
+hey
+i want to build a project management board to keep track of your tasks
+git clone <openclaw-repo-url>
+cd openclaw
+make install
+pnpm build
+```
+# Clawdbot Upstream Sync Workflow
+Use this workflow when your fork has diverged from upstream (e.g., "18 commits ahead, 29 commits behind").
+## Quick Reference
+```bash
+# Check divergence status
+git fetch upstream && git rev-list --left-right --count main...upstream/main
+# Full sync (rebase preferred)
+git fetch upstream && git rebase upstream/main && pnpm install && pnpm build && ./
+scripts/restart-mac.sh
+# Check for Swift 6.2 issues after sync
+grep -r "FileManager\.default\|Thread\.isMainThread" src/ apps
+--include="*.swift"
+
+        
